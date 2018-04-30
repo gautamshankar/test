@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Societe Generale</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body  >
+
+<h1 style ="color:red;text-align:center;">Societe Generale</h1>
+<h3 style="text-align:center;">LYX ETF Data Scapping</h3>
+<table style="width:100%">
+	<tr>
+		<th>WebSite</th>
+		<th>Column Header</th>
+		<th>Value in Website</th>
+		<th>Value in Referance</th>
+		<th>Result</th>
+	</tr>
+	<tr>
+		<td>Morning Star</td>
+		<td>Overview</td>
+		<td>200</td>
+		<td>400</td>
+		<td>Fail</td>
+	</tr>
+	<tr>
+		<td>Morning Star</td>
+		<td>Management</td>
+		<td>ABC</td>
+		<td>ABC</td>
+		<td>Fail</td>
+	</tr>
+	<tr>
+		<td>Morning Star French</td>
+		<td>Overview</td>
+		<td>200</td>
+		<td>200</td>
+		<td>Pass</td>
+	</tr>
+</table>
+
+</body>
+</html>
