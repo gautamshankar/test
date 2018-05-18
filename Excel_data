@@ -1,0 +1,28 @@
+package implementation;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Ultimate {
+//https://www.guru99.com/all-about-excel-in-selenium-poi-jxl.html
+	@SuppressWarnings("unused")
+	public static void main(String[] args) throws Throwable {
+		// TODO Auto-generated method stub
+				
+		File file = new File("C:\\New Folder\\test.xlsx");
+		FileInputStream inputStream = new FileInputStream(file);
+		Workbook wb = new XSSFWorkbook(inputStream);
+		Sheet sh = wb.getSheet("Sheet1");
+		int rowcount = sh.getLastRowNum();
+		Row row = sh.getRow(1);
+		System.out.println(row.getCell(1));
+		 	
+
+	}
+
+}
